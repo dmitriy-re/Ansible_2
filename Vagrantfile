@@ -40,8 +40,8 @@ Vagrant.configure("2") do |config|
 =begin 
           config.vm.provision "ansible" do |ansible|
             ansible.verbose = "vv"
-            ansible.playbook = "nginx.yml"
-	    ansible.inventory_path = "./hosts" 
+            ansible.playbook = "nginx_1.yml"
+	          ansible.inventory_path = "./hosts" 
             ansible.become = "true"
           end
 =end
